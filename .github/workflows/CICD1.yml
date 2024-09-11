@@ -11,10 +11,8 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Install Databricks CLI
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-
       - name: Deploy Notebooks to Databricks
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+        uses: actions/checkout@v4
