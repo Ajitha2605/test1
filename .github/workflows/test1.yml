@@ -18,6 +18,6 @@ jobs:
         run: |
           databricks workspace ls
         env:
-          DATABRICKS_HOST: https://adb-5922085005481471.11.azuredatabricks.net
-          DATABRICKS_TOKEN: dapi9660ca40679671529bc7f08d2865cd8a-3
+          DATABRICKS_HOST: https://adb-3778382070723255.15.azuredatabricks.net
+          DATABRICKS_TOKEN: dapiee8d2ae80ba064d0de7b4a04ca2e93e5
       - run: echo "🍏 This job's status is ${{ job.status }}."
