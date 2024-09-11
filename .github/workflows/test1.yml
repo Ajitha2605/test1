@@ -14,4 +14,10 @@ jobs:
           pip install --upgrade urllib3
           pip install --upgrade chardet
           pip install --upgrade databricks-cli
+      - name: Deploy Notebooks to Databricks
+        run: |
+          databricks workspace ls
+        env:
+          DATABRICKS_HOST: https://adb-5922085005481471.11.azuredatabricks.net
+          DATABRICKS_TOKEN: dapi9660ca40679671529bc7f08d2865cd8a-3
       - run: echo "🍏 This job's status is ${{ job.status }}."
